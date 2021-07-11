@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/liblib6502.a CMakeFiles/lib6502.dir/CPU_6502.c.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/liblib6502.a
