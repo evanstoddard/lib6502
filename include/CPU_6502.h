@@ -16,6 +16,15 @@
 
 #define CPU_6502_RESET_VECTOR 0xFFFC
 
+#define CPU_6502_STATUS_NEGATIVE 7
+#define CPU_6502_STATUS_OVERFLOW 6
+#define CPU_6502_STATUS_B_HIGH   5
+#define CPU_6502_STATUS_B_LOW    4
+#define CPU_6502_STATUS_DECIMAL  3
+#define CPU_6502_STATUS_INT      2
+#define CPU_6502_STATUS_ZERO     1
+#define CPU_6502_STATUS_CARRY    0
+
 /*****************************************************************************
  * Structs, Unions, Enums, & Typedefs
  *****************************************************************************/
@@ -62,7 +71,7 @@ typedef struct
 
     void * bus;
 
-    CPU_6502_Operation operations[100];
+    CPU_6502_Operation operations[0x100];
     uint8_t cyclesRemaining;
 } CPU_6502;
 
