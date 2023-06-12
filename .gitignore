@@ -1,0 +1,8 @@
+# Build Directory
+build
+
+# Vscode Config
+.vscode
+
+# Misc.
+.DS_Store
